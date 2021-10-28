@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wrong-metronome/static/css/main.de6fd0b7.chunk.css",
+    "main.js": "/wrong-metronome/static/js/main.f31889af.chunk.js",
+    "main.js.map": "/wrong-metronome/static/js/main.f31889af.chunk.js.map",
+    "runtime-main.js": "/wrong-metronome/static/js/runtime-main.cf79ffa0.js",
+    "runtime-main.js.map": "/wrong-metronome/static/js/runtime-main.cf79ffa0.js.map",
+    "static/css/2.5a7cb3a2.chunk.css": "/wrong-metronome/static/css/2.5a7cb3a2.chunk.css",
+    "static/js/2.825090d6.chunk.js": "/wrong-metronome/static/js/2.825090d6.chunk.js",
+    "static/js/2.825090d6.chunk.js.map": "/wrong-metronome/static/js/2.825090d6.chunk.js.map",
+    "index.html": "/wrong-metronome/index.html",
+    "precache-manifest.228f44924109c985b7e9c4d46c408487.js": "/wrong-metronome/precache-manifest.228f44924109c985b7e9c4d46c408487.js",
+    "service-worker.js": "/wrong-metronome/service-worker.js",
+    "static/css/2.5a7cb3a2.chunk.css.map": "/wrong-metronome/static/css/2.5a7cb3a2.chunk.css.map",
+    "static/css/main.de6fd0b7.chunk.css.map": "/wrong-metronome/static/css/main.de6fd0b7.chunk.css.map",
+    "static/js/2.825090d6.chunk.js.LICENSE.txt": "/wrong-metronome/static/js/2.825090d6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf79ffa0.js",
+    "static/css/2.5a7cb3a2.chunk.css",
+    "static/js/2.825090d6.chunk.js",
+    "static/css/main.de6fd0b7.chunk.css",
+    "static/js/main.f31889af.chunk.js"
+  ]
+}
