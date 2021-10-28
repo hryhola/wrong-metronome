@@ -5,7 +5,13 @@ import 'shards-ui/dist/css/shards.min.css';
 
 import { Slider, FormRadio, Button } from 'shards-react';
 
-const worker = new Worker('bpm-worker.js');
+const isDev = process.env.NODE_ENV === "development";
+const localUrl = process.env.REACT_APP_LOCAL_URL;
+const prodUrl = process.env.REACT_APP_PROD_URL;
+
+const URL = isDev ? localUrl : prodUrl;
+
+const worker = new Worker(`${URL}/bpm-worker.js`);
 const context = new (window.AudioContext || window.webkitAudioContext)();
 
 function App() {
@@ -46,7 +52,7 @@ function App() {
 
   useEffect(() => {
     if (!sounds.current[soundEffect]) {
-      fetch(`http://localhost:3000/${soundEffect}`)
+      fetch(`${URL}/${soundEffect}`)
         .then((response) => response.arrayBuffer())
         .then((arrayBuffer) => context.decodeAudioData(arrayBuffer))
         .then((audioBuffer) => {
@@ -141,7 +147,7 @@ function App() {
 
           {visibleTilt && (
             <div className='tilt'>
-              <span className='tilt-title'>Tilt (margin of error): </span>
+              <span className='tilt-title'>Tilt % (margin of error): </span>
               <input
                 className='tilt-input'
                 type='number'
